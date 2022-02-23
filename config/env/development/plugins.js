@@ -1,4 +1,14 @@
 module.exports = ({ env }) => ({
+  graphql: {
+    endpoint: "/graphql",
+    shadowCRUD: true,
+    playgroundAlways: false,
+    depthLimit: 8,
+    amountLimit: 2,
+    apolloServer: {
+      tracing: false
+    }
+  },
   upload: {
     config: {
       provider: 'cloudinary',
